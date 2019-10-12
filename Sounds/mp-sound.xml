@@ -280,7 +280,89 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
-  
+
+   <engine>
+      <name>engine-wake0</name>
+      <mode>looped</mode>
+      <path>Aircraft/Tu-22-Blinder/Sounds/jet-blast.wav</path>
+      <condition>
+        <property>engines/engine[0]/running</property>
+        <not>
+          <property>/sim/current-view/internal</property>
+        </not>
+      </condition>
+      <position>
+        <x>17.069</x>
+        <y>-0.880</y>
+        <z>0.032</z>
+      </position>
+      <orientation>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+        <inner-angle>60.0</inner-angle>
+        <outer-angle>180.0</outer-angle>
+        <outer-gain>0.2</outer-gain>
+      </orientation>
+      <volume>
+        <property>engines/engine/rpm</property>
+        <factor>0.1</factor>
+        <!--offset>-7.0</offset-->
+        <min>0.00</min>
+        <max>10</max>
+      </volume>
+      <volume>
+        <property>velocities/groundspeed-kt</property>
+        <factor>0.0175</factor>
+        <offset>0.25</offset>
+        <min>0.00</min>
+        <max>1.1</max>
+      </volume>
+      <reference-dist>120</reference-dist>
+      <max-dist>6000</max-dist>
+    </engine>
+
+   <engine>
+      <name>engine-wake1</name>
+      <mode>looped</mode>
+      <path>Aircraft/Tu-22-Blinder/Sounds/jet-blast.wav</path>
+      <condition>
+        <property>engines/engine[1]/running</property>
+        <not>
+          <property>/sim/current-view/internal</property>
+        </not>
+      </condition>
+      <position>
+        <x>17.069</x>
+        <y>0.880</y>
+        <z>0.032</z>
+      </position>
+      <orientation>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+        <inner-angle>60.0</inner-angle>
+        <outer-angle>180.0</outer-angle>
+        <outer-gain>0.2</outer-gain>
+      </orientation>
+      <volume>
+        <property>engines/engine[1]/rpm</property>
+        <factor>0.1</factor>
+        <!--offset>-7.0</offset-->
+        <min>0.00</min>
+        <max>10</max>
+      </volume>
+      <volume>
+        <property>velocities/groundspeed-kt</property>
+        <factor>0.0175</factor>
+        <offset>0.25</offset>
+        <min>0.00</min>
+        <max>1.1</max>
+      </volume>
+      <reference-dist>120</reference-dist>
+      <max-dist>6000</max-dist>
+    </engine>
+
     <engine>
       <name>shutdown-inside1</name>
       <mode>once</mode>

@@ -40,9 +40,9 @@
     <object-name>ReheatOuter</object-name>
     <condition>
       <greater-than>
-        <!-- /controls/engines/engine{0]/throttle -->
-        <property>sim/multiplay/generic/float[6]</property>
-        <value>0.8</value>
+        <!-- /controls/engines/engine{0]/afterburner -->
+        <property>sim/multiplay/generic/float[16]</property>
+        <value>0.0</value>
       </greater-than>        
     </condition>
   </animation>
@@ -50,8 +50,8 @@
   <animation>
     <type>scale</type>
     <object-name>ExternalFlame</object-name>
-    <!-- /controls/engines/engine{0]/throttle -->
-    <property>sim/multiplay/generic/float[6]</property>
+    <!-- /controls/engines/engine{0]/afterburner -->
+    <property>sim/multiplay/generic/float[16]</property>
     <x-min>    0.5 </x-min>
     <y-min>    1.0 </y-min>
     <z-min>    1.0 </z-min>

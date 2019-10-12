@@ -1,0 +1,29 @@
+As of August 2018 (EnRogue):
+	- tags (done)
+	- splash screens (done)
+	- external sounds need jet blast roar (done)
+	- check why interior engine sound can only be heard above a certain rpm (made some tweaks, a little better)
+	- some instruments are not hooked up (alpha, compass, engine temp)
+	- autopilot (done basic)
+	- afterburner needs ALS effect (should be orange according to photos - done)
+	- tailplane should be all moving (animation, 3d model needs changing)
+	- afterburner petals need animation fixed (done via property rules)
+	- gear compression looks too low, and rear gear compression animation is wrong (sinks into ground) - (redone, seems ok)
+	- rear gear is supposed to rotate front wheels down when weight off
+	- tanks in the right place based on sources below (done)
+	- need brake parachute (double cross type, orange & white), can use nasal one (done)
+	- outboard flap should be 20 deg, inboard 35 deg (done)
+	- outboard flap becomes flaperon when gear up, aileron locked (due to aileron reversal at high speed - animation only?)
+	- landing lights in wing roots
+
+Other sources:
+
+https://books.google.co.uk/books?id=kqPgAwAAQBAJ&printsec=frontcover&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false
+
+http://www.avialogs.com/index.php/aircraft/ussr/tupolev/tu-22/6364todo.html
+
+http://www.avialogs.com/index.php/en/aircraft/ussr/tupolev/tu-22/6365todo.html
+
+http://www.avialogs.com/index.php/en/aircraft/ussr/tupolev/tu-22/6366todo.html
+
+

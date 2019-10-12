@@ -1,0 +1,22 @@
+August 2018 (EnRogue) :
+	- corrected weights (sources listed in yasim config)
+	- corrected engine fuel consumption (https://en.valka.cz/topic/view/59420/Dobrynin-VD-7M-RD-7M2)
+	- corrected fuel load, shifted tanks - positions are roughly correct, sizes are guesses (tank 0 which is normally deleted is 5000l)
+	- corrected approach speed, near enough aoa, correct weight
+	- correct cruise numbers (speed, weight, engine setting)
+	- tweaked until numbers looked reasonable (I've lost count of the number of iterations I've done)
+	- reduced particle effects (smoke, tyres) so they are more subtle
+	- made contrail dependent on environment/contrail
+	- added tags
+	- added single preview/splashscreen
+	- added basic autopilot
+	- basic nasal fuel management, needs tweaking to manage CG
+	- tweaked sounds, added jet blast
+	- variable area nozzle controlled by property rule
+	- added nasal parachute (modelled as single 104sqm, real is dual canopy 52sqm)
+
+Sept 2018 (EnRogue) :
+	- ALS afterburner
+	- Old AB & exhaust effect only appear with fixed renderer & rembrandt
+	- Updated glass & fuselage reflection effects
+	- changed AP to act on control rather than trim

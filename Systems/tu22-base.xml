@@ -19,6 +19,8 @@
         <noze>1</noze>
       </livery>
     </model>
+
+    <fuel-fraction>0.5</fuel-fraction>
     
     <multiplay>
       <chat_display>1</chat_display>
@@ -46,6 +48,10 @@
         <float n="13" alias="/gear/gear[2]/rollspeed-ms"/>
         <float n="14" alias="/engines/engine[0]/n1"/>
         <float n="15" alias="/engines/engine[1]/n1"/>
+        <float n="16" alias="/engines/engine[0]/afterburner"/>
+        <float n="17" alias="/engines/engine[1]/afterburner"/>
+        <float n="18" alias="/engines/engine[0]/nozzle-pos-norm"/>
+        <float n="19" alias="/engines/engine[1]/nozzle-pos-norm"/>
         <!-- For Bombable -->
         <int type="int" n="10" alias="controls/armament/trigger">0</int>
         <string n="9" type="string"/>
@@ -91,6 +97,35 @@
       <file>Aircraft/Tu-22-Blinder/Nasal/generic-yasim-engine.nas</file>
       <file>Aircraft/Tu-22-Blinder/Nasal/engines-yasim.nas</file>
     </engines>
+    <fuelsystem>
+      <file>Aircraft/Tu-22-Blinder/Nasal/FuelSystem.nas</file>
+    </fuelsystem>
+    <chute>
+      <file>Aircraft/Tu-22-Blinder/Nasal/Parachute.nas</file>
+    </chute>
   </nasal>
-   
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <!--level-gal_us archive="y">230</level-gal_us-->
+      </tank>
+      <tank n="1">
+      </tank>
+      <tank n="2">
+      </tank>
+      <tank n="3">
+      </tank>
+      <tank n="4">
+      </tank>
+      <tank n="5">
+      </tank>
+      <tank n="6">
+      </tank>
+      <tank n="7">
+      </tank>
+      <!--tank n="8">
+      </tank-->
+    </fuel>
+  </consumables>
+ 
 </PropertyList>

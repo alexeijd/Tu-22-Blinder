@@ -1,0 +1,53 @@
+Data from Tupolev Tu-22 Blinder, Sergey Burdin & Alan Dawes (ISBN 1 84415 241 3)
+
+From Tu-22R Blinder-C variant with Dobrynin VD-7M
+
+6% thickness chord ratio, P-60 root, SR-8 tip, non symmetrical profile at root, unknown at tip
+602km/m2 wing loading 
+stalls at 14.5 degrees with flaps down
+L/D ratio in cruise 11.5
+-4 deg conical twist, ~3 deg incidence
+CG lmits:
+Takeoff (UC + flaps down) - 35-39% MAC
+Flight (UC + flaps up) - 30-40% MAC
+Landing (UC + flaps down) - 30-40% MAC (experienced pilots allowed rear limit increased to 43% with pitch damper)
+Slotted Inner flaps - 35 degrees
+Slotted Outer flaps - 20 degrees, also act as flaperon in later variants due to aileron reversal at higher speeds (automatic switchover)
+
+Spool time (dry): up to 23 seconds
+time to max Reheat : up to 9 seconds (after max mil)
+
+VD-7M Engine weight: 8267lb
+S.L. Mil Thrust SFC: 0.82 @ 23148lb thrust, 7400rpm 630 deg C
+S.L. AB Thrust SFC: 2.0 @ 35273lb thrust, 7400rpm 630 deg C
+Nominal is 7100rpm
+Cruise is 6850rpm
+Reheat @ 11000m: 810kts TAS, 7450rpm (limit), 21834lb thrust, 2.1 ATSFC, 630 deg C
+Cruise Reheat @ 11000m: 720-756kts TAS, 7450rpm (limit), 16534lb thrust, 1.65 ATSFC, 630 deg C
+Nominal @ 11000m: 540kts TAS, 7150rpm, 5511lb thust, 1.0 TSFC, 540 deg C
+Idle: 3250rpm, 992lb thrust, 410 deg C
+Air intake translates in takeoff & landing forward by 188mm, opening up annular slot to feed extra air to engines at low speed (fixed back in normal flight)
+extension & retraction is synced with flaps & main starboard gear
+
+33 internal tanks (107100lb at 0.83sg) - fuselage, inner & outer wing
+	1,2: forward fuselage (tank 1 deleted in most variants)
+	3: centre fuselage 
+	4: centre wing torsion box
+	5,6,7: rear fuselage
+	8-19: wing torsion box
+	
+	tanks 1-4 + port wing feed port engine
+	tanks 5-7 + starboard wing feed starboard engine
+	
+	18650lb in wing tanks (12 tanks)
+	wing tanks are pumped into 3,4,5
+
+	tank sequence is automatic, controls CG as well
+
+	tank 1: 5000l
+
+VNe (due to engine turbine limits below 4000m):
+	459kts T < 45C
+	405kts 45C < T < 55C
+	378kts T > 55C
+	

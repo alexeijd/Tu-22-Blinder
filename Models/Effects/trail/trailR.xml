@@ -19,8 +19,8 @@
         </greater-than>
         <greater-than>
           <!-- /position/altitude-ft -->
-          <property>sim/multiplay/generic/float[3]</property>
-          <value>3000</value>
+          <property>environment/contrail</property>
+          <value>0</value>
         </greater-than>
       </and>
     </condition>

@@ -3,5 +3,15 @@
 <PropertyList>
 
   <electrical include="generic-electrical.xml"/>
+
+  <property-rule n="100">
+    <name>Engine Nozzle</name>
+    <path>Aircraft/Tu-22-Blinder/Systems/engine-nozzle.xml</path>
+  </property-rule>
+
+  <autopilot>
+    <path>Aircraft/Tu-22-Blinder/Systems/autopilot-test.xml</path>
+  </autopilot>
+
   
 </PropertyList>

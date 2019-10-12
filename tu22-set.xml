@@ -1,24 +1,64 @@
-<?xml version="1.0" encoding="ISO-8859-1"?> 
+<?xml version="1.0" ?> 
 
 <PropertyList include="Systems/tu22-base.xml">
 
   <sim>
 
-    <description>Tupolev Tu-22 Blinder (YASim)</description>
-    <author>Emmanuel BARANGER (3D/FDM)</author>
-    
-    <aircraft-version>0.1</aircraft-version>
-    <status>Alpha</status>
+    <description>Ту́полев Ту-22 Шило / Tupolev Tu-22 Blinder (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM), EnRogue (Tweaks), Gary Brown (Liveries)</author>
+    <long-description>The Tu-22 (NATO codename 'Blinder') was called 'Shilo' (Шило) by its crews - meaning 'Awl', referring to it's sharp sleek shape. It was the Soviet Union's first supersonic bomber, and was in service with the USSR, and then Russia until 1993. In Soviet and Russian service it flew in the maritime patrol, reconnaissance, and elint/jamming roles. It was also used by Libya (up until early 2000's) and Iraq (until the 1st Gulf War) in the bombing role.
+    </long-description>
+    <aircraft-version>0.2</aircraft-version>
+    <status>Beta</status>
     
     <flight-model archive="y">yasim</flight-model>
     <aero archive="y">Systems/tu22-yasim</aero>
     
     <rating>
-      <FDM type="int">     2 </FDM>
+      <FDM type="int">     3 </FDM>
       <systems type="int"> 1 </systems>
       <cockpit type="int"> 2 </cockpit>
       <model type="int">   4 </model>
     </rating>
+
+    <tags>
+      <tag>bomber</tag>
+      <tag>reconnaissance</tag>
+      <tag>1960s</tag>
+      <tag>coldwar</tag>
+      <tag>supersonic</tag>
+      <tag>jet</tag>
+      <tag>2-engine</tag>
+      <tag>afterburner</tag>
+      <tag>tupolev</tag>
+    </tags>
+
+    <previews>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/tu-22-preview-1.jpg</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/tu-22-preview-2.jpg</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/tu-22-preview-3.jpg</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Previews/tu-22-preview-4.jpg</path>
+      </preview>
+    </previews>
+
+    <rendering>
+      <refl_correction type="string">-0.45</refl_correction>
+    </rendering>
 
   </sim>
 

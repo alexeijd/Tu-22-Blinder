@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<PropertyList>
+    <path>thrust_flame.ac</path>
+    <offsets>
+      <x-m> 18.34174 </x-m>
+      <y-m> -0.79498 </y-m>
+      <z-m>  0.03078 </z-m>
+    </offsets>
+
+    <effect>
+        <inherits-from>Aircraft/Tu-22-Blinder/Models/Effects/Afterburner/ab-flame</inherits-from>
+        <object-name>bounding_box</object-name>
+    </effect>
+	
+    <nopreview/>
+    <animation>
+        <type>select</type>
+        <object-name>bounding_box</object-name>
+        <condition>
+	    <property>sim/multiplay/generic/float[16]</property>	
+        </condition>
+    </animation>
+    <animation>
+	<type>scale</type>
+	<object-name>bounding_box</object-name>
+	<property>sim/multiplay/generic/float[18]</property>
+	<nopreview/>
+	<x-factor>1.7</x-factor>
+	<y-factor>1.25</y-factor>
+	<z-factor>1.25</z-factor>
+    </animation>
+</PropertyList>

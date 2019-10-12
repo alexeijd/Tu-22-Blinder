@@ -37,7 +37,7 @@
       <phi-max-deg>1.5</phi-max-deg>
       <speed-mps>
         <property>engines/engine/n1</property>
-        <factor>5</factor>
+        <factor>10</factor>
       </speed-mps>
       <rotation-speed>
         <x-min-deg-sec>0</x-min-deg-sec>
@@ -52,7 +52,7 @@
     <counter>
       <particles-per-sec>
         <property>engines/engine/n1</property>
-        <factor>1</factor>
+        <factor>0.2</factor>
         <spread>20</spread>
       </particles-per-sec>
     </counter>
