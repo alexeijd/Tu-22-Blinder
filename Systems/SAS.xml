@@ -42,7 +42,7 @@
 		<gain>1.0</gain>
 		<!-- vrot-y is yasim equivalent of jsb q-rad_sec -->
 		<input>/fdm/yasim/velocities/vrot-y</input>
-		<output>/systems//SAS/pitch-damp-factor</output>
+		<output>/systems/SAS/pitch-damp-factor</output>
 	</filter>
 
 	<filter>
@@ -50,7 +50,7 @@
 		<type>gain</type>
 		<gain>1</gain>
 		<input>/controls/flight/elevator</input>
-		<reference>/systems//SAS/pitch-damp-factor</reference>
+		<reference>/systems/SAS/pitch-damp-factor</reference>
 		<output>
 			<property>/systems/SAS/elevator-output</property>
 			<min>-1</min>
