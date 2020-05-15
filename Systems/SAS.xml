@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<!-- Simple Yaw Damper -->
+	<filter>
+		<name>yaw-damp-factor</name>
+		<type>gain</type>
+		<!-- gain expression as we don't want the yaw damper on during takeoff & landing -->
+		<!-- probably could have just been a condition -->
+		<gain>
+			<expression>
+				<table>
+					<property>/controls/gear/gear-down</property>
+					<entry><ind>1</ind><dep>0.0</dep></entry>
+					<entry><ind>0</ind><dep>-1.0</dep></entry>
+				</table>
+			</expression>
+		</gain>
+		<!-- vrot-z is the yasim equivalent of jsb r-rad_sec -->
+		<input>/fdm/yasim/velocities/vrot-z</input>
+		<output>/systems/SAS/yaw-damp-factor</output>
+	</filter>
+
+	<filter>
+		<name>rudder-output</name>
+		<type>gain</type>
+		<gain>1</gain>
+		<input>/controls/flight/rudder</input>
+		<reference>/systems/SAS/yaw-damp-factor</reference>
+		<output>
+			<property>/systems/SAS/rudder-output</property>
+			<min>-1</min>
+			<max>1</max>
+		</output>
+	</filter>
+
+	<!-- Simple Pitch Damper -->
+	<filter>
+		<name>pitch-damp-factor</name>
+		<type>gain</type>
+		<gain>1.0</gain>
+		<!-- vrot-y is yasim equivalent of jsb q-rad_sec -->
+		<input>/fdm/yasim/velocities/vrot-y</input>
+		<output>/systems//SAS/pitch-damp-factor</output>
+	</filter>
+
+	<filter>
+		<name>elevator-output</name>
+		<type>gain</type>
+		<gain>1</gain>
+		<input>/controls/flight/elevator</input>
+		<reference>/systems//SAS/pitch-damp-factor</reference>
+		<output>
+			<property>/systems/SAS/elevator-output</property>
+			<min>-1</min>
+			<max>1</max>
+		</output>
+	</filter>
+
+</PropertyList>

@@ -13,5 +13,10 @@
     <path>Aircraft/Tu-22-Blinder/Systems/autopilot-test.xml</path>
   </autopilot>
 
+  <autopilot n="101">
+    <name>SAS</name>
+    <path>Aircraft/Tu-22-Blinder/Systems/SAS.xml</path>
+  </autopilot>
+
   
 </PropertyList>

@@ -89,7 +89,7 @@
          <stall aoa="20" width="1" peak="1.5"/>
          <flap0 start="0" end="1" lift="1.8" drag="1.1"/>
          
-         <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+         <control-input axis="/systems/SAS/elevator-output" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
          
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
@@ -103,7 +103,7 @@
          <stall aoa="22" width="1" peak="1.5"/>
          <flap0 start="0" end="1" lift="1.2" drag="1.1"/>
   
-         <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+         <control-input axis="/systems/SAS/rudder-output" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
 
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
